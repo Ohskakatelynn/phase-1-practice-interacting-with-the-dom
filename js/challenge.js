@@ -2,11 +2,8 @@ const timer = setInterval( incrementCounter, 1000 )
 
 function incrementCounter () {
     const timer = document.getElementById('counter')
-
-timer.textContent++ 
+    timer.textContent++ 
 }
-
-const minus = document.getElementById('minus')
 
 
 const pause = document.getElementById('pause')
@@ -15,4 +12,14 @@ pause.addEventListener('click', function() {
 })
 
 
-    
+const minus = document.getElementById('minus')
+minus.addEventListener('click',function() {
+    const timer = document.getElementById('counter')
+    timer.textContent--
+})
+
+const plus = document.getElementById('plus')
+plus.addEventListener('click',function() {
+    const timer = document.getElementById('counter')
+    timer.textContent++
+})
